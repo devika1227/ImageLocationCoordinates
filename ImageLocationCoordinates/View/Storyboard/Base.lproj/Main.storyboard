@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="25408" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WCx-rW-dWl">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="25407"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Gvk-o3-sOE">
+            <objects>
+                <viewController id="WCx-rW-dWl" customClass="ViewController" customModule="ImageLocationCoordinates" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QHI-P7-bwm">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIb-4x-kMm">
+                                <rect key="frame" x="20" y="401" width="353" height="50"/>
+                                <color key="backgroundColor" systemColor="tintColor"/>
+                                <state key="normal" title="Gallery">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="galleryButtonAction:" destination="WCx-rW-dWl" eventType="touchUpInside" id="Gmd-kt-nBH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5y-xP-ofb">
+                                <rect key="frame" x="20" y="194.33333333333334" width="353" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.2313232422" green="0.5249023438" blue="0.9677734375" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BWE-8q-IjK"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sIb-4x-kMm" firstAttribute="centerY" secondItem="QHI-P7-bwm" secondAttribute="centerY" id="8ph-s5-OBG"/>
+                            <constraint firstItem="BWE-8q-IjK" firstAttribute="trailing" secondItem="sIb-4x-kMm" secondAttribute="trailing" constant="20" id="B3G-Lt-Kys"/>
+                            <constraint firstItem="sIb-4x-kMm" firstAttribute="height" secondItem="QHI-P7-bwm" secondAttribute="height" multiplier="0.0586854" id="L5M-9F-te5"/>
+                            <constraint firstItem="b5y-xP-ofb" firstAttribute="height" secondItem="sIb-4x-kMm" secondAttribute="height" id="Pbn-7N-0sx"/>
+                            <constraint firstItem="b5y-xP-ofb" firstAttribute="trailing" secondItem="sIb-4x-kMm" secondAttribute="trailing" id="Qrl-N9-W0U"/>
+                            <constraint firstItem="b5y-xP-ofb" firstAttribute="centerY" secondItem="BWE-8q-IjK" secondAttribute="centerY" multiplier="0.5" id="X7u-tN-feh"/>
+                            <constraint firstItem="sIb-4x-kMm" firstAttribute="leading" secondItem="BWE-8q-IjK" secondAttribute="leading" constant="20" id="fCm-aS-xEK"/>
+                            <constraint firstItem="b5y-xP-ofb" firstAttribute="leading" secondItem="sIb-4x-kMm" secondAttribute="leading" id="y9B-9b-Qwy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="latLongLabel" destination="b5y-xP-ofb" id="lxb-hf-RJK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nkC-0K-RlM" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="190" y="175"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.53333333329999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
